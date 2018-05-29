@@ -9,6 +9,11 @@ import {LightboxModule} from 'primeng/lightbox';
 import {DialogModule} from 'primeng/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ButtonModule} from 'primeng/button';
+/**
+ * This is the main module of the project and is executed first.
+ * It contains all the important modules imported
+ * 
+ */
 @NgModule({
   declarations: [
     AppComponent
@@ -19,4 +24,5 @@ import {ButtonModule} from 'primeng/button';
   // providers: [ImgLibService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

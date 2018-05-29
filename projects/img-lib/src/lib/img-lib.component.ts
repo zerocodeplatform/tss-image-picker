@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ImgLibService } from '../public_api';
 
 @Component({
   selector: 'lib-img-lib',
