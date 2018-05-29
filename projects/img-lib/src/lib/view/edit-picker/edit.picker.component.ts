@@ -8,7 +8,7 @@ import { Imageproperties } from '../imageproperties';
 })
 export class EditComponent implements OnInit {
   @Input() options: Imageproperties;
-  // @Output() imageEmitter: EventEmitter<any> = new EventEmitter();
+  @Output() imageEmitter: EventEmitter<any> = new EventEmitter();
   display: boolean = false;
   constructor() {
     this.display = true;
@@ -18,9 +18,8 @@ export class EditComponent implements OnInit {
 
   }
 
-  // closeModel(){
-  //   this.imageEmitter.emit(true);
-  //   this.display = false;
-  // }
+  closeModel(){
+    this.imageEmitter.emit(false);
+  }
 
 }

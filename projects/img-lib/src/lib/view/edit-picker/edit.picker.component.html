@@ -1,10 +1,7 @@
-<!-- <p-dialog header="Image" [(visible)]="display" >
+<p-dialog header="Image" [(visible)]="display" (onHide)="closeModel()">
   <div class="ui-g" >
     <div class="ui-g-6" style="padding: 10px" >
       <img width="100" height="auto" [src]="options.source">
     </div>
   </div>
-  <p-footer>
-    <button type="button" pButton icon="fa-check" (click)="closeModel()" label="Close"></button>
-</p-footer>
-</p-dialog> -->
+</p-dialog>

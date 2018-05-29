@@ -13,7 +13,7 @@ import { Imageproperties } from '../imageproperties';
 export class ViewComponent implements OnInit {
   @Input() options: Imageproperties;
   display:boolean=false;
-  //isEdit = false;
+  isPreview = false;
 
   constructor() { }
 
@@ -22,12 +22,11 @@ export class ViewComponent implements OnInit {
   }
 
   showDialog() {
-    this.display = true;
+    this.isPreview=true;
   }
 
-  // imageEmitter(event) {
-  //   if (event) {
-  //     this.isEdit = false;
-  //   }
-  // }
+  imageEmitter(event) {
+      this.isPreview = event;
+
+  }
 }
