@@ -1,9 +1,13 @@
 <p-dialog header="Image" [(visible)]="display" >
   <div class="ui-g" >
-    <div class="ui-g-6" style="padding: 10px" >
+    <div class="ui-g-9" style="padding: 10px" >
       <img width="100" height="auto" [src]="options.source">
     </div>
-  </div> 
-</p-dialog>
-<img [src]="options.source"  (click)="showDialog()" [width]="options.width" [height]="options.height" onError="this.src='https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/painting_landscape.png'"
- />
+  </div>
+</p-dialog> 
+<!-- <div *ngIf="isEdit">
+  <lib-edit (imageEmitter)="imageEmitter($event)" [options]='options'></lib-edit>
+</div> -->
+<img [src]="options.source" style="cursor: pointer;" (click)="showDialog()" [width]="options.width" [height]="options.height" onError="this.src='https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/painting_landscape.png'"
+/>
+<!-- <p-lightbox [images]="images"></p-lightbox> -->

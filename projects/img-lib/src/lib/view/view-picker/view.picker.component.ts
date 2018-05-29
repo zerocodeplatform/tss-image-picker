@@ -11,16 +11,23 @@ import { Imageproperties } from '../imageproperties';
   styleUrls: ['./view.picker.component.css']
 })
 export class ViewComponent implements OnInit {
-  @Input() options:{
-    
-  }
-  display: boolean = false;
+  @Input() options: Imageproperties;
+  display:boolean=false;
+  //isEdit = false;
+
   constructor() { }
 
   ngOnInit() {
-  }
-  showDialog(){
-    this.display=true;
+    
   }
 
+  showDialog() {
+    this.display = true;
+  }
+
+  // imageEmitter(event) {
+  //   if (event) {
+  //     this.isEdit = false;
+  //   }
+  // }
 }
