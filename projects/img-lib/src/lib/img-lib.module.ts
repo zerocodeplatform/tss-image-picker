@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { ImgLibComponent } from './img-lib.component';
 import {DialogModule} from 'primeng/dialog';
 import { ViewModule } from './view/view.module';
+import {ButtonModule} from 'primeng/button';
+import {LightboxModule} from 'primeng/lightbox';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 /**
@@ -9,7 +12,7 @@ import { ViewModule } from './view/view.module';
  * 
  */
 @NgModule({
-  imports: [DialogModule
+  imports: [ButtonModule,LightboxModule,BrowserAnimationsModule,DialogModule
   ],
   declarations: [ImgLibComponent],
   exports: [ViewModule],

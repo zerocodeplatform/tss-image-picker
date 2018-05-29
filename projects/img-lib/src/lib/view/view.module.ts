@@ -4,8 +4,6 @@ import { CommonModule } from '@angular/common';
 import {DialogModule} from 'primeng/dialog';
 import { EditComponent } from './edit-picker/edit.picker.component';
 import { ViewComponent } from './view-picker/view.picker.component';
-import {ButtonModule} from 'primeng/button';
-import {LightboxModule} from 'primeng/lightbox';
 
 
 /**
@@ -14,7 +12,7 @@ import {LightboxModule} from 'primeng/lightbox';
  */
 @NgModule({
   imports: [
-    CommonModule,DialogModule,ButtonModule,LightboxModule
+    CommonModule,DialogModule
   ],
   declarations: [ViewComponent, EditComponent],
   exports: [ViewComponent],

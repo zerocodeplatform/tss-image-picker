@@ -5,7 +5,6 @@
     </div>
   </div>
 </p-dialog>  -->
-{{isEdit}}
 <div *ngIf="isPreview">
   <lib-edit (imageEmitter)="imageEmitter($event)" [options]='options'></lib-edit>
 </div>

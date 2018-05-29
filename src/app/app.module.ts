@@ -1,12 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import {MenuLibModule} from 'tssmenu-lib';
-import {LightboxModule} from 'primeng/lightbox';
-import {DialogModule} from 'primeng/dialog';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {ButtonModule} from 'primeng/button';
 import { ImgLibModule } from 'projects/img-lib/src/public_api';
 
 /**
@@ -19,9 +13,8 @@ import { ImgLibModule } from 'projects/img-lib/src/public_api';
     AppComponent
   ],
   imports: [
-    BrowserModule,MenuLibModule,ImgLibModule,DialogModule,BrowserAnimationsModule,ButtonModule
+    BrowserModule,ImgLibModule
   ],
-  // providers: [ImgLibService],
   bootstrap: [AppComponent]
 })
 
