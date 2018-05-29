@@ -11,7 +11,9 @@ import { Imageproperties } from '../imageproperties';
   styleUrls: ['./view.picker.component.css']
 })
 export class ViewComponent implements OnInit {
-  @Input() options: Imageproperties ;
+  @Input() options:{
+    
+  }
   display: boolean = false;
   constructor() { }
 

@@ -4,25 +4,25 @@
  */
 export interface Imageproperties {
     id?:number;
-    source?:number;
+    source?:string;
     description?:string;
     width?:number;
     height?:number;
-    positionX?:number;
-    positionY?:number;
+    positionX?:any;
+    positionY?:any;
     className?:string;
     style?:string;
     dataset?:any;
-    datasetColumn?:number;
-    alternateText?:number;
-    rollOverimage?:number;
-    rollOverStyle?:number;
-    html?:number;
-    code?:number;
-    opacity?:number;
-    link?:number;
-    hasTooltip?:number;
-    tooltip?:number;
+    datasetColumn?:any;
+    alternateText?:string;
+    rollOverimage?:any;
+    rollOverStyle?:any;
+    html?:string;
+    code?:any;
+    opacity?:any;
+    link?:string;
+    hasTooltip?:any;
+    tooltip?:any;
 
 
 }
